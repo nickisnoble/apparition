@@ -1,0 +1,8 @@
+*{
+  box-sizing: border-box;
+  transition: color $duration, background-color $duration, border-color $duration, opacity $duration, transform $duration;
+  &:before, &:after{
+    box-sizing: border-box;
+    transition: color $duration, background-color $duration, border-color $duration, opacity $duration, transform $duration;
+  }
+}

@@ -26,16 +26,16 @@ module.exports = function(grunt) {
         files: '**/*.scss',
         tasks: ['compass','csscomb']
       }
-      livereload: {
-        files: [
-          'assets/js/*.js',
-          'assets/css/*.css',
-          '*.hbs',
-        ],
-        options: {
-          livereload: true
-        }
-      },
+      // livereload: {
+      //   files: [
+      //     'assets/js/*.js',
+      //     'assets/css/*.css',
+      //     '*.hbs',
+      //   ],
+      //   options: {
+      //     livereload: true
+      //   }
+      // },
     },
   });
 

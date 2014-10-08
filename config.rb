@@ -1,5 +1,4 @@
 require 'compass/import-once/activate'
-require 'modular-scale'
 require 'autoprefixer-rails'
 
 # Set this to the root of your project when deployed:

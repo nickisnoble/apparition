@@ -1,0 +1,53 @@
+html { @include khtml(); }
+
+body { 
+  @include kbody(); 
+  font-family: $serif;
+}
+
+%headings{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: $sans;
+}
+
+h1 { 
+  @include ktype(5, 1, 1);
+  @extend %headings;
+}
+h2 { 
+  @include ktype(4, 1, 1);
+  @extend %headings; 
+}
+h3 { 
+  @include ktype(3, 1, 1);
+  @extend %headings; 
+}
+h4 { 
+  @include ktype(2, 1, 1);
+  @extend %headings; 
+}
+h5 { 
+  @include ktype(1, 1, 0);
+  @extend %headings; 
+}
+h6 { 
+  @include ktype(0, 1, 0);
+  @extend %headings;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+%base-type{
+  @include ktype(0,0,1);
+}
+
+p{
+  @extend %base-type;
+}
+
+ul, ol {
+  @extend %base-type;
+}
+
+small { @include ktype(-1,0,1); }
